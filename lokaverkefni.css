@@ -1,0 +1,83 @@
+body{
+   padding: 1%;
+   font-family: Verdana, sans-serif;
+}
+
+.selected { 
+	font-weight: bold; 
+}
+
+ul{
+
+}
+
+li{
+	position: relative;
+	display: inline;
+	padding: 1%;
+	font-family: sans-serif;
+	
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h1{
+	font-family: Verdana, sans-serif;
+	padding: 1%;
+	border: solid;
+	border-width: 2px;
+	text-align: center;
+
+}
+
+p{
+	padding: 1%;
+}
+
+div{
+	width: 45%;
+	display: inline-block;
+	float: left;
+	border: solid;
+	border-width: 1px;
+	margin:2%;
+
+}
+
+h3{
+	text-align: center;
+}
+
+.skodanakonnun{
+
+}
+
+img{
+	position: relative;
+	left:5%;
+}
+
+label{
+	display: block;
+	padding:1%;
+	position: relative;
+
+}
+
+input{
+	margin:1%;
+	width: 200px;
+	height: 20px;
+	margin-left: 6%;
+}
+
+textarea{
+	margin:1%;
+	width: 200px;
+	height: 100px;
+	margin-left: 15px;
+}
+
