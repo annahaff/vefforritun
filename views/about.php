@@ -5,7 +5,6 @@
 	<h2>Langar þig á tónleika?</h2>
 			<form>
 				<div>
-					<label class="hvad" for="name">Hvað er í gangi?</label>
 					<input id="leita" type="submit" value="Sjá tónleika">
 				</div>
 				
