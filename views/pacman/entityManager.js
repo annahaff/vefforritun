@@ -178,7 +178,7 @@ var entityManager = {
                (ghost.x <= pacman.cx && pacman.cx <= ghost.x+tile_width) &&
                (ghost.y <= pacman.cy && pacman.cy <= ghost.y+tile_width)) {
                 ghost.setMode('dead');
-                var snd = new Audio("pacman_eatghost.wav"); // buffers automatically when created
+                var snd = new Audio("views/pacman/pacman_eatghost.wav"); // buffers automatically when created
                 if(g_sound) snd.play();
                 pacman.score = pacman.score + 200
                 this._points.push(new Points({
@@ -201,25 +201,7 @@ var entityManager = {
         var gameboard = this._gameboard[0];
 
         gameboard.reset(gameboard.level);
-        //gameboard.clearBoard();
-        //gameboard.fillBoard();
-       // g_isUpdatePaused = false;
-
         main.init();
-
-
-                /*gameboard.fillBoard();
-        console.log("pressing restart");
-        this.clearEverything();
-        main._isGameOver = false;
-        document.getElementById('gameOver').style.display = "none";
-
-        this.init();
-        var gameboard = this._gameboard[0];
-        gameboard.clearBoard();
-        gameboard.fillBoard();
-
-        main.init();*/
     },
 
     clearEverything : function(){
@@ -230,9 +212,6 @@ var entityManager = {
                 }
         }
     }
-
-
-
 }
 
 // Some deferred setup which needs the object to have been created first

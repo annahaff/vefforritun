@@ -71,7 +71,7 @@ var g_images = {};
 function requestPreloads() {
     var requiredImages = {
 	pacman : "https://notendur.hi.is/frh12/Lokaverkefni/pacman.png",
-    cherry : "cherry.png"
+    cherry : "views/pacman/cherry.png"
     };
     imagesPreload(requiredImages, g_images, preloadDone);
 }

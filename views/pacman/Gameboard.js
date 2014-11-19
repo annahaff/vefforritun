@@ -6,6 +6,11 @@
 
 /* jshint browser: true, devel: true, globalstrict: true */
 
+
+var canvas = document.getElementById('myCanvas');
+canvas.width  = 504;
+canvas.height = 456;
+
 // A generic contructor which accepts an arbitrary descriptor object
 function Gameboard(descr) {
     for (var property in descr) {
@@ -45,15 +50,6 @@ Gameboard.prototype.nextLevel = function() {
 
 //tileArray consists of Tile objects...
 Gameboard.prototype.fillBoard = function() {
-    //console.log(g_levelMap);
-    //g_levelMap = g_levels[2];
-    //this.level = 3;
-    //console.log(g_levels);
-    //console.log("g_levelMap.length: " + g_levelMap.length);
-    
-    //console.log("caller is " + arguments.callee.caller); //caller er this.reset 
-    //console.log("level: " + this.level + ", g_levelMap: " + g_levelMap + ", g_levels: " + g_levels);
-
     for(var i = 0; i < g_levelMap.length; i++){
        // console.log("i : " + i);
        // console.log("g_levelMap.length[i] : " + g_levelMap[0].length);
@@ -114,13 +110,6 @@ Gameboard.prototype.render = function (ctx) {
         Tile.prototype.makeTile(ctx, this.tileArray[i].x, this.tileArray[i].y, 
                                 this.tileArray[i].type);     
     }
-
-
-    /*
-    ctx.save();
-    ctx.fillStyle = "red";
-    ctx.fillRect(this.tileArray[220].x, this.tileArray[220].y, 24, 24);
-    ctx.restore();*/
 };
 
 Gameboard.prototype.clearBoard = function(){

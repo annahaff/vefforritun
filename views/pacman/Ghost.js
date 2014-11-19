@@ -153,29 +153,13 @@ Ghost.prototype.update = function (du) {
         this.x = g_canvas.width;
     }
 
-    //if((this.x%1 != 0) || (this.y%1 != 0)) console.log(this);
     if (g_levelMap[this.tilePosY][this.tilePosX] === 1) { //1 er maze
-        console.log(this);
-        console.log("bögg");
         //console.log(this.color + ", x " + this.tilePosX + ", y " + this.tilePosY);
         while(g_levelMap[this.tilePosY][this.tilePosX] === 1)
             this.fixMe();
         console.log(this);
 
         console.log("\n\n");
-
-        /*if (this.direction === 'down') {
-            this.turn("up", this.cx, rail, 0, -1);
-        }
-        else if (this.direction === 'up') {
-            this.turn("down", this.cx, rail, 0, 1);
-        }
-        else if (this.direction === 'right') {
-            this.turn("left", this.cy, rail, -1, 0);
-        }
-        else if (this.direction === 'left') {
-            this.turn("right", this.cy, rail, 1, 0);
-        }*/
     }
     
     //else {
@@ -233,7 +217,7 @@ Ghost.prototype.checkPacmanCollision = function(pacman) {
     if((this.x <= pacman.cx && pacman.cx <= this.x+tile_width) && (this.y <= pacman.cy && pacman.cy <= this.y+tile_width)) {
         if (this.mode === 'chase' || this.mode === 'scatter') {
             pacman.lives--;
-            var snd = new Audio("pacman_death.wav"); // buffers automatically when created
+            var snd = new Audio("views/pacman/pacman_death.wav"); // buffers automatically when created
             if(g_sound) snd.play();
             pacman.reset();
             this.reset();

@@ -2,10 +2,12 @@
 
 <div class="pac">
     <p>Leiðist þér? Þá getur þú spilað Pacman!</p>
+    <p>Þennan tölvuleik bjuggum við til í tölvuleikjaforritun veturinn 2014.</p>
+    <p>Höfundar: Anna Hafþórsdóttir, Freydís Halldórsdóttir, Einar Örn Bergsson, Jóhanna Karen Birgisdóttir.</p>
 </div>
 
 <div class="content">
-   <canvas id="myCanvas" width="504" height="456" style="border: 1px  solid black;">
+   <canvas id="myCanvas" name="myCanvas" >
    Sorry, but your browser does not support the HTML5 canvas tag.
    </canvas>
     <div class="gameOver" id="gameOver">GAME OVER<p><span onclick="entityManager.restart()">Restart</span></p></div>

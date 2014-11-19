@@ -2,23 +2,27 @@
 <?php
 
 class Skraning
-{
-	public $name;
-	public $email;
-	public $address;
-	public $errors;
-	
+{	
 	public function Get($data) {	
 		$this->name = $data['name'];
 		$this->email = $data['email'];
 		$this->address = $data['address'];
-	
 		$this->errors = array("0" => "Fylla verður út í nafn",
 							  "1" => "Fylla verður út í netfang",
 							  "2" => "Fylla verður út í heimilisfang",
 							  "3" => "Heimilisfang verður að innihalda götuheiti og tölu",
-							  "4" => "Netfang verður að innihalda @ og ."
-							  );
+							  "4" => "Netfang verður að innihalda @ og .");
+	}
+
+	public function Insert($name, $address, $email) {
+		$db = new PDO('sqlite:lokaverkefni.db');
+		$insert = $db->prepare("INSERT INTO postlist (name, address, email) VALUES(:name, :address, :email)");
+		if ($insert->execute(array('name' => $name, 'address' => $address, 'email' => $email))) {
+			return 'Skráning tókst';
+		}
+		else {
+			return 'Þú ert nú þegar skráð/ur!';
+		}
 	}
 
 	public function is_valid() {
@@ -47,3 +51,4 @@ class Skraning
 		return $returnarr;
 	}
 }
+
