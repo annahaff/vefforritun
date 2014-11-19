@@ -43,4 +43,9 @@ class Comments
 		}
 		return $returnarr;
 	}
+
+	public function clear() {
+		$this->name = null;
+		$this->comment = null;
+	}
 }

@@ -50,5 +50,11 @@ class Skraning
 		}
 		return $returnarr;
 	}
+
+	public function clear() {
+		$this->name = null;
+		$this->address = null;
+		$this->email = null;
+	}
 }
 

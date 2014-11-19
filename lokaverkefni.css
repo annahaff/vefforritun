@@ -1,9 +1,6 @@
 * { text-align: justify; }
 
-body {
-   padding: 1%;
-   font-family: Verdana, sans-serif;
-}
+body { padding: 1%; font-family: Verdana, sans-serif; }
 
 nav {
 	background: rgba(255, 255, 255, 0.95);

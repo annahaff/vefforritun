@@ -26,6 +26,7 @@ if ($method === 'POST' && $part === 'comments') {
 
 	if (count(array_keys($comment_check, 'true')) == count($comment_check)) {
 		$result = $comments->Insert($comments->name, $comments->comment, $comments->datetime);
+		$comments->clear();
 	}
 	else {
 		$comment_fail = $comments->is_error($comment_check);
@@ -46,6 +47,7 @@ else if ($method === 'POST' && $part === 'skraning') {
 	if (count(array_keys($validness_check, 'true')) == count($validness_check)) {
 		$result = $skraning->Insert($skraning->name, $skraning->address, $skraning->email);
 		echo "<script type='text/javascript'>alert('$result');</script>";
+		$skraning->clear();
 	}
 	else {
 		$validness_fail = $skraning->is_error($validness_check);
