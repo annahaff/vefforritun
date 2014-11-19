@@ -22,10 +22,7 @@ nav ul li a:hover
 	transition: all 0.4s;
 }
 
-.selected { 
-	border-bottom: 2px solid hotpink;
-	color: hotpink; 
-}
+.selected { border-bottom: 2px solid hotpink; color: hotpink; }
 
 .main {
 	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
@@ -102,7 +99,6 @@ h1 {
 
 h2 { text-align: center; }
 h3 { text-align: center; }
-
 p { padding: 1%; }
 
 .commentbox { 
@@ -177,17 +173,12 @@ p { padding: 1%; }
 	padding: 1% 2% 1% 2%; 
 	margin: 5% auto 0 auto; 
 	background: rgba(178, 102, 255, 0.3);
-	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-	
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);	
 }
 
 .pac p { text-align: center; }
 
-
-.tonleikar {
-	width:100%;
-	float: left;
-}
+.tonleikar { width:100%; float: left; }
 
 .lysing {
 	display: block;
@@ -198,22 +189,23 @@ p { padding: 1%; }
 }
 
 .hverogeinn {
-	display:inline;
 	float: left;
-	margin:2%;
-	padding:1%;
+	margin: 2% 0 0 5.5%;
+	padding: 1%;
 	border:solid grey;
 	border-width: 1px;
 	background-color: #FFE0FF;
 	width:40%;
 	height: 50em;
 	padding-bottom: 2%;
+	overflow: hidden;
 }
 
 .myndtonleikar {
 	display:block;
 	margin:1% auto;
 	margin-bottom: 5%;
+	width: 100%;
 }
 
 #leita {

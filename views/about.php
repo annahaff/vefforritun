@@ -2,7 +2,7 @@
 	<h1>Tónleikar</h1>
 </header>
 <div class="tonleikar">
-	<h3>Langar þig á tónleika?</h3>
+	<h2>Langar þig á tónleika?</h2>
 			<form>
 				<div>
 					<label class="hvad" for="name">Hvað er í gangi?</label>

@@ -14,10 +14,10 @@ $(document).ready(function(){
 			'success': function(response){
 				console.log(response);
 				//Ef engar niðurstöður fundust
-				if(response.results.length === 0){
+				if (response.results.length === 0){
 					$('div.resault').append("Engar niðurstöður fundust");
 				//Hér setjum við niðurstöðurnar í htm-ið
-				}else{
+				} else {
 					for (var i = 0; i < response.results.length; i++) {
 						var title = response.results[i].eventDateName;
 						var info = response.results[i].name;
