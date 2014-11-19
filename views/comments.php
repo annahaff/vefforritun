@@ -19,20 +19,27 @@ if ($inserted)
 
 <form action="index.php?part=comments" method="post">
 	<div class="postbox">
-		<div class="valid">
+
+		<!-- Hafa hér svona klasa dæmi eins og í skráningunni? --> 
+		<!-- Ef notandi hefur slegið inn nafn náum við í það úr $comment->name o.s.frv. -->
+		
+		<div <?php if (!$validness_check[3]) echo 'class="invalid"'; else echo 'class="valid"'?>>
 			<label>Nafn: </label>
-			<input id="name" type="text" name="name" placeholder="Kalli">
+			<input id="name" type="text" name="name" placeholder="Kalli" value="<?php echo $comment->name; ?>">
 		</div>
-		<div class="valid">
+
+		<div <?php if (!$validness_check[3]) echo 'class="invalid"'; else echo 'class="valid"'?>>
 			<label>Athugasemd:</label>
-			<textarea name="comment" placeholder="Geðveik síða!"></textarea>
+			<textarea name="comment" placeholder="Geðveik síða!" value="<?php echo $comment->comment_txt; ?>"></textarea>
 		</div>
+
+
 		<input type="submit" value="Bæta við athugasemd">
 
 	</div>
 </form>
 
-<div class="commentbox">
+<div class="postbox">
 	<?php
 	foreach ($commentsList as $row) {
 		$name = $row['name'];

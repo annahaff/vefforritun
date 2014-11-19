@@ -3,11 +3,9 @@
 body {
    padding: 1%;
    font-family: Verdana, sans-serif;
-
 }
 
-nav
-{
+nav {
 	background: rgba(255, 255, 255, 0.95);
 	position: fixed;
 	top: 0;
@@ -32,16 +30,23 @@ nav ul li a:hover
 	color: hotpink; 
 }
 
-.pic { overflow: hidden; }
-.catpic { position: fixed; }
-.catpic img { width: 30%; }
+.main {
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	float: left;
+	padding: 2.5%;
+	background: rgba(178, 102, 255, 0.3);
+	width: 45%;
+	margin-left: 2%;
+	float: left;
+	margin-bottom: 3%;
+}
 
 .postbox { 
 	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 	width: 55%;
 	margin: 0 auto 2% auto;
 	padding: 2.5%;
-	background: linear-gradient(to top right, yellow, orange, pink, red, white);
+	background: rgba(178, 102, 255, 0.3);
 }
 
 .textbox {
@@ -49,12 +54,8 @@ nav ul li a:hover
 	width: 55%;
 	margin: 0 auto 2% auto;
 	padding: 2.5%;
-	background: linear-gradient(to bottom right, blue, pink, violet, indigo);
+	background: rgba(178, 102, 255, 0.3)
 }
-.postbox label { float: left;}
-.postbox .valid { }
-.postbox #name { margin-left: 12%; width: 32%;}
-.postbox textarea { width: 32%; }
 
 .comment {
 	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -63,18 +64,23 @@ nav ul li a:hover
 	padding: 1% 3% 1% 3%;
 }
 
-.errors {
-	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-	background: rgba(255, 0, 0, 0.7);
-	width: 55%;
-	margin: 0 auto 2% auto;
-	padding: 2.5%;
+.pic {
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 44%;
+	height: 50em;
+	float: right;
+	margin-right: 2%;
+	background: transparent url("mynd.jpg") no-repeat right 60px;
+	background-size: cover;
 }
 
-.errors ul li {
-	font-size: 1em;
-}
-
+form .postbox input { margin: 1%; padding: 0.5%; }
+form .postbox label { padding: 0.5%; width: 30%; float: left; }
+form .valid { clear: left; }
+form .invalid input { clear: left; background: rgb(255, 204, 204); }
+form .postbox textarea { width: 32%; margin: 2%; padding: 0.5%; }
+form input[type="submit"] { width: 25%; text-align: center; }
 
 header {
 	font-family: Verdana, sans-serif;
@@ -97,58 +103,74 @@ h1 {
 	width: 70%;
 }
 
-p { padding: 1%; }
+h2 { text-align: center; }
+h3 { text-align: center; }
 
-.main {
-	width: 45%;
-	display: inline-block;
-	float: left;
-	border: solid 1px;
-	margin:2%;
-}
+p { padding: 1%; }
 
 .commentbox { 
 	font-family: "Arial", sans-serif; 
 	border: solid 1px transparent;  
 	width: 60%; 
 	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-
 	margin: 0 auto;
-	background: linear-gradient(to top right, yellow, orange, pink, red, white);
-}
-
-
-h3 {
-	text-align: center;
-}
-
-.skodanakonnun {
-
+	background: rgba(178, 102, 255, 0.3)
 }
 
 .commenttxt { font-size: 0.9em; }
 
-img {
-
+.score {
+	font-family: "Arial", cursive, sans-serif;
+	font-size: 1.5em;
+	color: #FF0066;
+	padding: 15px;
+	bottom: 0;
+	float:left;
+	width: 25%;
 }
 
-label {
-	display: block;
-	padding:1%;
+#output { margin-left: 6%; float: left; }
+#lives{ float: right; }
+
+#myCanvas { width: 50%; float:left; margin-bottom: 5%; }
+
+.content {	
+	margin-left: 15%;
+	margin-top: 5%;
+}
+
+.gameOver {
+	position: absolute;
+	top: 35%;
+	left: 25.5%;
+	color: #FF7F00;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+	cursor: default;
+	display: none;
+	background-color:rgba(0, 255, 0, 0.7);
+	padding: 10px;
+}
+
+.gameOver span {
+	font-size: 40px;
+	cursor: pointer;
 	position: relative;
+	left: 28%;
 }
 
-input {
-	margin:1%;
-	width: 200px;
-	height: 20px;
-	margin-left: 6%;
+.gameOver span:hover { color: #FFD700; }
+
+.info {
+	box-shadow: 1px 1px 1px 1px rgba(255, 0, 102, 0.3);
+	padding: 1%;
+	width: 25%;
+	float: left;
+	font-family: "Arial", cursive, sans-serif;
+	border: 2.5px solid #FF0066;
+	margin-left: 2%;
 }
 
-textarea {
-	margin:1%;
-	width: 200px;
-	height: 100px;
-	margin-left: 15px;
-}
-
+.pac { width: 55%; margin: 7% auto 0 auto; background: rgba(178, 102, 255, 0.3)}
+.pac p { text-align: center; }

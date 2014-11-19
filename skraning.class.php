@@ -1,9 +1,6 @@
 
 <?php
 
-/**
- * Hlutur sem heldur utan um skráningu, kann að búa sig til útfrá gögnum á formi og validate'a
- */
 class Skraning
 {
 	public $name;
@@ -20,12 +17,12 @@ class Skraning
 							  "1" => "Fylla verður út í netfang",
 							  "2" => "Fylla verður út í heimilisfang",
 							  "3" => "Heimilisfang verður að innihalda götuheiti og tölu",
-							  "4" => "Netfang verður að innihalda @ og .",
+							  "4" => "Netfang verður að innihalda @ og ."
 							  );
 	}
 
 	public function is_valid() {
-		$error_index = array(true, true, true, true, true, true, true);
+		$error_index = array(true, true, true, true, true, true);
 		if (empty($this->name)) {
 			$error_index[0] = false;
 		}
