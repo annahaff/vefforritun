@@ -1,4 +1,18 @@
 <header>
-	<h1>Um okkur</h1>
+	<h1>Tónleikar</h1>
 </header>
-<p>TODO</p>
+<div class="tonleikar">
+	<h3>Langar þig á tónleika?</h3>
+			<form>
+				<div>
+					<label class="hvad" for="name">Hvað er í gangi?</label>
+					<input id="leita" type="submit" value="Sjá tónleika">
+				</div>
+				
+			</form>
+			<div class="resault">
+			</div>
+
+	<script src="jquery-1.11.0.min.js"></script>
+	<script src="views/tonleikar.js"></script>
+</div>

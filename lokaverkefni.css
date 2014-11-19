@@ -12,7 +12,7 @@ nav {
 	box-shadow: 0px 1px 1px 0px;
 }
 
-nav ul li { position: relative; display: inline; }
+nav ul li { position: relative; display: inline; z-index: 1; }
 nav ul li a { padding: 0.5% 0.7% 0.5% 0.7%; text-decoration: none; }
 
 nav ul li a:hover 
@@ -182,3 +182,59 @@ p { padding: 1%; }
 }
 
 .pac p { text-align: center; }
+
+
+.tonleikar{
+	width:100%;
+	float: left;
+}
+
+.lysing{
+	display: block;
+	background-color: hotpink;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	font-size: 150%;
+}
+
+p{
+	font-size: 100%;
+	font-family: Helvetica, sans-serif;
+	font-style: italic;
+}
+
+.hverogeinn{
+	display:inline;
+	float: left;
+	margin:2%;
+	padding:1%;
+	border:solid grey;
+	border-width: 1px;
+	background-color: #FFE0FF;
+	width:40%;
+
+
+}
+
+.myndtonleikar{
+	display:block;
+	margin:1% auto;
+	margin-bottom: 5%;
+}
+
+#leita{
+	display: block;
+	margin:2%;
+	width: 20%;
+	
+}
+
+.hvad{
+	font-family: font-family: Comic Sans, Comic Sans MS, cursive;
+	font-size: 100%;
+	margin:2%;
+	text-align: center;
+}
+
+
+
+
