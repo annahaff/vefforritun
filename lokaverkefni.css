@@ -103,7 +103,7 @@ h1 {
 h2 { text-align: center; }
 h3 { text-align: center; }
 
-p { padding: 1%; }
+p { padding: 1%; font-family: Helvetica, sans-serif; font-style: italic; }
 
 .commentbox { 
 	font-family: "Arial", sans-serif; 
@@ -183,51 +183,41 @@ p { padding: 1%; }
 
 .pac p { text-align: center; }
 
-
 .tonleikar{
 	width:100%;
 	float: left;
 }
 
-.lysing{
+.lysing {
 	display: block;
 	background-color: hotpink;
-	font-family: Comic Sans, Comic Sans MS, cursive;
+	font-family: Verdana, cursive;
 	font-size: 150%;
+	padding: 1%;
 }
 
-p{
-	font-size: 100%;
-	font-family: Helvetica, sans-serif;
-	font-style: italic;
-}
-
-.hverogeinn{
+.hverogeinn {
 	display:inline;
 	float: left;
-	margin:2%;
-	padding:1%;
+	margin: 2% 0 0 5%;
+	padding: 1%;
 	border:solid grey;
 	border-width: 1px;
 	background-color: #FFE0FF;
-	width:40%;
-
+	width: 40%;
+	height: 53em;
 
 }
 
-.myndtonleikar{
-	display:block;
-	margin:1% auto;
+.myndtonleikar {
+	margin: 1% auto;
 	margin-bottom: 5%;
+	width: 100%;
 }
 
-#leita{
-	margin:2%;
-	width: 20%;
-	
-}
+#leita { margin:2%; width: 20%; }
 
-input[type=submit]{
+input[type=submit] {
 	position: relative;
 	left:38%;
 	background: #c83ccf;

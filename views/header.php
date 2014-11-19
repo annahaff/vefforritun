@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Freydís og Anna</title>
 		<link rel="stylesheet" href="lokaverkefni.css">
 		<script src="jquery-1.11.0.min.js"></script>
