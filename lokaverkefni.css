@@ -184,25 +184,20 @@ p { padding: 1%; }
 .pac p { text-align: center; }
 
 
-.tonleikar{
+.tonleikar {
 	width:100%;
 	float: left;
 }
 
-.lysing{
+.lysing {
 	display: block;
 	background-color: hotpink;
-	font-family: Comic Sans, Comic Sans MS, cursive;
+	font-family: Verdana, cursive;
 	font-size: 150%;
+	padding: 1%;
 }
 
-p{
-	font-size: 100%;
-	font-family: Helvetica, sans-serif;
-	font-style: italic;
-}
-
-.hverogeinn{
+.hverogeinn {
 	display:inline;
 	float: left;
 	margin:2%;
@@ -211,24 +206,23 @@ p{
 	border-width: 1px;
 	background-color: #FFE0FF;
 	width:40%;
-
-
+	height: 50em;
+	padding-bottom: 2%;
 }
 
-.myndtonleikar{
+.myndtonleikar {
 	display:block;
 	margin:1% auto;
 	margin-bottom: 5%;
 }
 
-#leita{
+#leita {
 	display: block;
 	margin:2%;
 	width: 20%;
-	
 }
 
-.hvad{
+.hvad {
 	font-family: font-family: Comic Sans, Comic Sans MS, cursive;
 	font-size: 100%;
 	margin:2%;
