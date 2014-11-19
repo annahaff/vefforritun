@@ -226,14 +226,16 @@ input[type=submit] {
 	background-image: -ms-linear-gradient(top, #c83ccf, #b82b97);
 	background-image: -o-linear-gradient(top, #c83ccf, #b82b97);
 	background-image: linear-gradient(to bottom, #c83ccf, #b82b97);
-	-webkit-border-radius: 25;
-	-moz-border-radius: 25;
-	border-radius: 25px;
+	-webkit-border-radius: 35;
+	-moz-border-radius: 35;
+	border-radius: 35px;
 	font-family: Arial;
 	color: #ffffff;
 	font-size: 20px;
-	padding: 10px 20px 10px 20px;
+	padding: 10px 40px 10px 40px;
 	text-decoration: none;
+	width: 50px;
+	font-size: 80%;
 }
 
 input[type=submit]:hover {
