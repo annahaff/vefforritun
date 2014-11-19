@@ -1,4 +1,4 @@
-
+* { text-align: justify; }
 
 body {
    padding: 1%;
@@ -6,8 +6,30 @@ body {
 
 }
 
+nav
+{
+	background: rgba(255, 255, 255, 0.95);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 9%;
+	box-shadow: 0px 1px 1px 0px;
+}
+
+nav ul li { position: relative; display: inline; }
+nav ul li a { padding: 0.5% 0.7% 0.5% 0.7%; text-decoration: none; }
+
+nav ul li a:hover 
+{
+	border-bottom: 3px solid hotpink;
+	color: hotpink; 
+	transition: all 0.4s;
+}
+
 .selected { 
-	font-weight: bold; 
+	border-bottom: 2px solid hotpink;
+	color: hotpink; 
 }
 
 .pic { overflow: hidden; }
@@ -15,50 +37,64 @@ body {
 .catpic img { width: 30%; }
 
 .postbox { 
-	border: solid 1px black;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 	width: 55%;
 	margin: 0 auto 2% auto;
 	padding: 2.5%;
 	background: linear-gradient(to top right, yellow, orange, pink, red, white);
 }
 
-.postbox .input1 { float: left;}
-.postbox .input2 { float: left; }
-
+.textbox {
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	width: 55%;
+	margin: 0 auto 2% auto;
+	padding: 2.5%;
+	background: linear-gradient(to bottom right, blue, pink, violet, indigo);
+}
+.postbox label { float: left;}
+.postbox .valid { }
+.postbox #name { margin-left: 12%; width: 32%;}
+.postbox textarea { width: 32%; }
 
 .comment {
-	border: solid 1px black;
-	background-color: rgba(5, 255, 5, 0.6);
-	margin: 5%;
-	padding-left: 5%;
-	padding-right: 5%;
-	text-align: justify;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+	background: rgba(255, 255, 255, 0.5); 
+	margin: 3% 5% 3% 5%;
+	padding: 1% 3% 1% 3%;
 }
 
-ul {
-
+.errors {
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	background: rgba(255, 0, 0, 0.7);
+	width: 55%;
+	margin: 0 auto 2% auto;
+	padding: 2.5%;
 }
 
-li {
-	position: relative;
-	display: inline;
-	padding: 1%;
-	font-family: sans-serif;
-	
+.errors ul li {
+	font-size: 1em;
 }
 
-a {
-	text-decoration: none;
-	color: black;
-}
 
-h1 {
+header {
 	font-family: Verdana, sans-serif;
-	padding: 1%;
-	border: solid;
-	border-width: 2px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 	text-align: center;
+	width: 80%;
+	margin: 5% auto 2% auto;
+	padding: 2.5%;
+	background-image: url("cat-banner.jpg");
+	background-size: cover;
+}
 
+h1 { 
+	font-family: Georgia, cursive;
+	font-size: 2.7em; 
+	text-align: center; 
+	background: rgba(255, 255, 255, 0.7); 
+	margin: 0 auto; 
+	padding: 1%; 
+	width: 70%;
 }
 
 p { padding: 1%; }
@@ -73,8 +109,10 @@ p { padding: 1%; }
 
 .commentbox { 
 	font-family: "Arial", sans-serif; 
-	border: solid 1px black; 
+	border: solid 1px transparent;  
 	width: 60%; 
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+
 	margin: 0 auto;
 	background: linear-gradient(to top right, yellow, orange, pink, red, white);
 }
@@ -91,7 +129,6 @@ h3 {
 .commenttxt { font-size: 0.9em; }
 
 img {
-
 
 }
 

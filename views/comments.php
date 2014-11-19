@@ -1,4 +1,6 @@
-<h1>Gestabók</h1>
+<header>
+	<h1>Gestabók</h1>
+</header>
 
 <?php
 if (sizeof($errors) > 0)
@@ -14,24 +16,16 @@ if ($inserted)
 }
 ?>
 
-<div class="catpic">
-	<img src="cat.jpg" alt="cat">
-	<!--<img src="cat2.jpg" alt="cat2">
-	<img src="cat3.jpg" alt="cat3">
-	<img src="cat4.jpg" alt="cat4">-->
-</div>
-
 
 <form action="index.php?part=comments" method="post">
 	<div class="postbox">
-		<div <?php if (!$array[0]) echo 'class="invalid"'; else echo 'class="field"'?> >
-			<label>Nafn:</label>
-			<input type="text" name="name" placeholder="Kalli">
+		<div class="valid">
+			<label>Nafn: </label>
+			<input id="name" type="text" name="name" placeholder="Kalli">
 		</div>
-
-		<div <?php if (!$array[1]) echo 'class="invalid"'; else echo 'class="field"'?> >
+		<div class="valid">
 			<label>Athugasemd:</label>
-			<textarea name="comment"></textarea>
+			<textarea name="comment" placeholder="Geðveik síða!"></textarea>
 		</div>
 		<input type="submit" value="Bæta við athugasemd">
 

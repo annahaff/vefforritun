@@ -1,6 +1,8 @@
 
 
-<h1>Anna og Freydís</h1>
+<header>
+	<h1>Anna og Freydís</h1>
+</header>
 <div class="main">
 	<h3>Velkomin</h3>
 	<p>Þú hefur rambað inn á síðu sem var smíðuð af Önnu H og Freydísi H. Við erum tvær kennkyns mannverur sem stundum nám í tölvunarfræði. 

@@ -6,7 +6,8 @@
     $allowedPages = array(
         'about'    => 'views/about.php',
         'comments' => 'views/comments.php',
-        'forsíða'  => 'views/main.php'
+        'forsíða'  => 'views/main.php',
+        'skraning' => 'views/skraning.php'
     );
 
     include( isset($allowedPages[$page]) ? $allowedPages[$page] : $allowedPages["forsíða"] );
