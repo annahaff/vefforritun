@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Dæmi tekið í fyrirlestri #17, 20.okt 2014.
- * Ekki til eftirbreytni aðeins til að sýna hugsanagang við smíði.
- * Hægt að gera nothæft með að hreinsa upp og einangra virkni
- */
-
 $part = '';
 if (isset($_GET['part']))
 {

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Freydís og</title>
+		<title>Freydís og Anna</title>
 		<link rel="stylesheet" href="lokaverkefni.css">
 	</head>
 	<body>

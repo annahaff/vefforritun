@@ -1,17 +1,45 @@
-body{
+
+
+body {
    padding: 1%;
    font-family: Verdana, sans-serif;
+
 }
 
 .selected { 
 	font-weight: bold; 
 }
 
-ul{
+.pic { overflow: hidden; }
+.catpic { position: fixed; }
+.catpic img { width: 30%; }
+
+.postbox { 
+	border: solid 1px black;
+	width: 55%;
+	margin: 0 auto 2% auto;
+	padding: 2.5%;
+	background: linear-gradient(to top right, yellow, orange, pink, red, white);
+}
+
+.postbox .input1 { float: left;}
+.postbox .input2 { float: left; }
+
+
+.comment {
+	border: solid 1px black;
+	background-color: rgba(5, 255, 5, 0.6);
+	margin: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: justify;
+}
+
+ul {
 
 }
 
-li{
+li {
 	position: relative;
 	display: inline;
 	padding: 1%;
@@ -24,7 +52,7 @@ a {
 	color: black;
 }
 
-h1{
+h1 {
 	font-family: Verdana, sans-serif;
 	padding: 1%;
 	border: solid;
@@ -33,48 +61,54 @@ h1{
 
 }
 
-p{
-	padding: 1%;
-}
+p { padding: 1%; }
 
-div{
+.main {
 	width: 45%;
 	display: inline-block;
 	float: left;
-	border: solid;
-	border-width: 1px;
+	border: solid 1px;
 	margin:2%;
-
 }
 
-h3{
+.commentbox { 
+	font-family: "Arial", sans-serif; 
+	border: solid 1px black; 
+	width: 60%; 
+	margin: 0 auto;
+	background: linear-gradient(to top right, yellow, orange, pink, red, white);
+}
+
+
+h3 {
 	text-align: center;
 }
 
-.skodanakonnun{
+.skodanakonnun {
 
 }
 
-img{
-	position: relative;
-	left:5%;
+.commenttxt { font-size: 0.9em; }
+
+img {
+
+
 }
 
-label{
+label {
 	display: block;
 	padding:1%;
 	position: relative;
-
 }
 
-input{
+input {
 	margin:1%;
 	width: 200px;
 	height: 20px;
 	margin-left: 6%;
 }
 
-textarea{
+textarea {
 	margin:1%;
 	width: 200px;
 	height: 100px;

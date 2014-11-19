@@ -1,3 +1,4 @@
+
 <?php
 
     $page = isset($_GET['part']) ? trim(strtolower($_GET['part']))       : "forsíða";
