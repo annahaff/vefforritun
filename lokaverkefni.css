@@ -79,8 +79,8 @@ form .postbox input { margin: 1%; padding: 0.5%; }
 form .postbox label { padding: 0.5%; width: 30%; float: left; }
 form .valid { clear: left; }
 form .invalid input { clear: left; background: rgb(255, 204, 204); }
-form .postbox textarea { width: 32%; margin: 2%; padding: 0.5%; }
-form input[type="submit"] { width: 25%; text-align: center; }
+form .postbox textarea { width: 32%; padding: 0.5%; margin: 1% 0 0 1%; }
+form input[type="submit"] { text-align: center; width: 25%; }
 
 header {
 	font-family: Verdana, sans-serif;
