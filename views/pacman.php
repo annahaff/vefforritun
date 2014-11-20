@@ -1,4 +1,6 @@
-
+<header>
+    <h1>Pacman</h1>
+</header>
 
 <div class="pac">
     <p>Leiðist þér? Þá getur þú spilað Pacman!</p>
