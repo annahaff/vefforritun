@@ -12,7 +12,7 @@ nav {
 	box-shadow: 0px 1px 1px 0px;
 }
 
-nav ul li { position: relative; display: inline; z-index: 1; }
+nav ul li { display: inline; z-index: 1; }
 nav ul li a { padding: 0.5% 0.7% 0.5% 0.7%; text-decoration: none; }
 
 nav ul li a:hover 
@@ -243,33 +243,37 @@ form input[type=submit]:hover {
 
 @media screen and (max-width: 1200px) {
 	.main { width: 90%; }
-	.pic { width: 95%; float: left; margin-left: 2%; }
+	.pic { width: 60%; }
 	.hverogeinn { height: 45em; }
 	form input[type=submit] { width: 50%; margin-left: 25%;}
 }
 
 @media screen and (max-width: 1000px) {
+	.pic { width: 95%; float: left; margin-left: 2%; }
 	.hverogeinn { width: 45%; margin: 1%; }
+	.pac { width: 90%; }
+	.content { margin: 3% auto 0 4.5%; }
+	#myCanvas { width: 95%; }
+	.info { width: 88%; }
+	.score { width: 88%; }
 }
 
 @media screen and (max-width: 800px) {
 	body { margin: 0; padding: 0; }
-	header { width: 100%; margin: 10% 0 5% 0; }
+	header { width: 95%; margin: 10% 0 5% 0; }
 	.textbox { width: 90%; }
 	.postbox { width: 90%; }
-	.hverogeinn { width: 95%; margin: 1% auto 1% auto; height: auto;  }
-	.pac { width: 90%; }
+	.hverogeinn { width: 95%; margin: 1% auto 1% 1%; height: auto;  }
 	form input[type=submit] { width: 40%; margin-left: 30%; }
-	#myCanvas { width: 95%; }
 }
 
 @media screen and (max-width: 600px) {
-	header { margin-top: 16%; }
+	* { padding: 0; }
+	header { margin-top: 18%; }
 	nav { height: auto; }
-	nav ul li a { padding: 0; margin: 0;  }
+	nav ul li a { margin-left: 1%; padding: 1%; margin-top: 1%; }
 	.hverogeinn { width: 100%; margin: 1% auto 1% auto; padding: 0; height: auto; }
 	form input[type=submit] { width: 50%; margin-left: 25%; }
-
 }
 
 @media screen and (max-width: 400px) {
