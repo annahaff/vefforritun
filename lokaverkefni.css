@@ -278,6 +278,9 @@ form input[type=submit]:hover {
 
 @media screen and (max-width: 400px) {
 	header { margin-top: 25%; }
+	form input[type=text] { float: right; }
+	form textarea { float: right; }
+	form label { font-size: 0.9em; }
 }
 
 
